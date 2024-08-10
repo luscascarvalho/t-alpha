@@ -3,7 +3,7 @@ import axios from "axios";
 import ProductCard from "../ProductCard";
 import EditProductModal from "../EditProductModal";
 import DeleteProductModal from "../DeleteProductModal";
-import AddProductModal from "../AddProductModal"; // Importa o novo modal
+import AddProductModal from "../AddProductModal";
 import "../dashboard/Dashboard.css";
 
 function Dashboard() {
@@ -12,7 +12,7 @@ function Dashboard() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
-  const [isAddModalOpen, setIsAddModalOpen] = useState(false); // Adiciona um estado para o modal de criação
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
   useEffect(() => {
     const fetchProducts = async () => {
