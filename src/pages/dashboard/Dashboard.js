@@ -58,14 +58,14 @@ function Dashboard() {
   };
 
   const openAddModal = () => {
-    setIsAddModalOpen(true); // Abre o modal de criação
+    setIsAddModalOpen(true);
   };
 
   const closeModals = () => {
     setSelectedProduct(null);
     setIsEditModalOpen(false);
     setIsDeleteModalOpen(false);
-    setIsAddModalOpen(false); // Fecha o modal de criação
+    setIsAddModalOpen(false);
   };
 
   const handleSave = (newProduct) => {
